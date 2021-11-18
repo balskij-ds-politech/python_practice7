@@ -1,1 +1,9 @@
-
+def print_till_zero(n):
+   if n == 0:
+       return 1
+   else:
+       print(n, end='\n')
+       return print_till_zero(n - 1)
+n = int(input("Введите число n: "))
+print('Стобец чисел от n до 1: ')
+print_till_zero(n)
