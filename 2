@@ -6,8 +6,8 @@ def is_palindrome(s):
             return is_palindrome(s[1:-1])
         else:
             return False
-a = str(input("Введите слово или строку:"))
-if (is_palindrome(a) == True):
+s = str(input("Введите слово или строку:"))
+if (is_palindrome(s) == True):
     print("Это палиндром!")
 else:
     print("Это не палиндром!")
