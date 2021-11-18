@@ -1,1 +1,8 @@
-
+def max_in(list):
+    if len(list) == 1:
+        return list[0]
+    else:
+        return max(list[0],max_in(list[1:]))
+liststr = input("Введите список чисел через пробел: ").split(' ')
+list = [int(x) for x in liststr]
+print("Самое больше число в списке: ", max_in(list))
